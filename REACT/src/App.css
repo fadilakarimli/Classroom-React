@@ -1,0 +1,26 @@
+.app {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.help-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6368;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.help-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+}

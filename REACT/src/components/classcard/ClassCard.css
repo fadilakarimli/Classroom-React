@@ -1,0 +1,78 @@
+.class-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.class-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-header {
+  height: 128px;
+  position: relative;
+  padding: 12px;
+}
+
+.card-title h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-title p {
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 4px 0 0 0;
+}
+
+.card-avatar {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 64px;
+  height: 64px;
+  background-color: #7986cb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-body {
+  height: 180px;
+  background-color: white;
+}
+
+.card-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.card-icon-btn {
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5f6368;
+  transition: background-color 0.2s;
+}
+
+.card-icon-btn:hover {
+  background-color: #f1f3f4;
+}
