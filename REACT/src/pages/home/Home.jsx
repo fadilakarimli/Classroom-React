@@ -2,8 +2,7 @@ import React from 'react';
 import ClassCard from '../../components/classcard/ClassCard';
 import './Home.css';
 
-
-const Home = () => {
+const Home = ({ onClassClick }) => {
   const classes = [
     {
       title: 'PTP101',
@@ -26,12 +25,13 @@ const Home = () => {
     <div className="home">
       <div className="cards-grid">
         {classes.map((classItem, index) => (
-          <ClassCard
-            key={index}
-            title={classItem.title}
-            subtitle={classItem.subtitle}
-            bgColor={classItem.bgColor}
-          />
+          <div key={index} onClick={() => onClassClick(classItem)}>
+            <ClassCard
+              title={classItem.title}
+              subtitle={classItem.subtitle}
+              bgColor={classItem.bgColor}
+            />
+          </div>
         ))}
       </div>
     </div>

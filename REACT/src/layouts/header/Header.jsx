@@ -1,17 +1,14 @@
 import React from 'react';
-import { Menu, Plus, Grid3x3, GraduationCap } from 'lucide-react';
+import { Menu, Plus, Grid3x3 } from 'lucide-react';
 import './Header.css';
 import profileImg from '../../assets/fado.jpg'; 
 import classroomImg from '../../assets/download.svg'; 
 
-
-
-
-const Header = () => {
+const Header = ({ onMenuClick }) => {  // ← buraya əlavə et
   return (
     <header className="header">
       <div className="header-left">
-        <button className="icon-btn">
+        <button className="icon-btn" onClick={onMenuClick}>  {/* ← buraya əlavə et */}
           <Menu size={24} />
         </button>
         <div className="logo">
