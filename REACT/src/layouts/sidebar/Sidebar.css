@@ -115,14 +115,14 @@
   font-weight: 500;
 }
 
-.sidebar-item.notification-item {
+.sidebar-item.sidebar-notification {
   position: relative;
 }
 
 .notification-badge {
   position: absolute;
-  top: 16px;
-  left: 36px;
+  top: 10px;
+  left: 45px;
   width: 8px;
   height: 8px;
   background-color: #1a73e8;

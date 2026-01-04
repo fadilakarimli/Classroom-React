@@ -5,6 +5,7 @@ import Sidebar from './layouts/sidebar/Sidebar';
 import Home from './pages/home/Home';
 import ClassDetail from './pages/classdetail/ClassDetail';
 import Settings from './pages/settings/Settings';
+import Archive from './pages/archive/Archive';
 import { HelpCircle } from 'lucide-react';
 import './App.css';
 
@@ -46,7 +47,7 @@ const AppContent = () => {
         <Route path="/tasks" element={<div style={{padding: '20px'}}>Tasks Page - Coming Soon</div>} />
         <Route path="/users" element={<div style={{padding: '20px'}}>Users Page - Coming Soon</div>} />
         <Route path="/education" element={<div style={{padding: '20px'}}>Education Page - Coming Soon</div>} />
-        <Route path="/archive" element={<div style={{padding: '20px'}}>Archive Page - Coming Soon</div>} />
+        <Route path="/archive" element={<Archive />} />
        <Route path="/settings" element={<Settings />} />
       </Routes>
       

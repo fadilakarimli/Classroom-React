@@ -89,8 +89,8 @@ const Sidebar = ({ isOpen, onClose }) => {
             <span>Calendar</span>
           </div>
 
-          <div 
-            className={`sidebar-item notification-item ${isActive('/tasks') ? 'active' : ''}`}
+         <div 
+            className={`sidebar-item sidebar-notification ${isActive('/tasks') ? 'active' : ''}`}
             onClick={() => handleNavigation('/tasks')}
           >
             <ClipboardList size={24} />
